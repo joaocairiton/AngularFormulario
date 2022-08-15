@@ -1,0 +1,47 @@
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">Clientes</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contact" routerLink="/cadastro">Cadastro novo Cliente</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="main">
+<h1>Lista de clientes</h1>
+<div class="container">
+  <table class="table">
+    <thead class="table-dark">
+      <tr>
+
+        <th scope="col">Codigo</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Telefone</th>
+        <th scope="col">E-mail</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr *ngFor="let cliente of clientes">
+
+        <td>{{cliente.id}}</td>
+        <td>{{ cliente.nome }}</td>
+        <td>{{ cliente.telefone }}</td>
+        <td>{{ cliente.email }}</td>
+
+        <td>
+          <button (click)="atualizarCliente(cliente.id)" class="btn btn-info">Editar</button>
+          <button (click)="removerCliente(cliente.id)" class="btn btn-danger">Excluir</button>
+          <button (click)="detailsCliente(cliente.id)" class="btn btn-warning">Visualizar</button>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+</section>

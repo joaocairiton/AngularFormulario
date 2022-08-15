@@ -1,0 +1,10 @@
+CREATE DATABASE formSB;
+use bd_form;
+create table pessoa (
+id int(4) AUTO_INCREMENT,
+nome varchar(30) not null,
+telefone varchar (15) not null,
+email varchar(50) not null,
+
+PRIMARY KEY (id)
+);

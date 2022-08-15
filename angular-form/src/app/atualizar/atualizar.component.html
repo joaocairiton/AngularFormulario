@@ -1,0 +1,77 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">Clientes</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contact" routerLink="/clientes">Lista de Cliente</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <header>
+    <img src="../../assets/imagem/logo.png" alt="" />
+    <h1>Editar de Cliente</h1>
+  </header>
+  <main>
+    <form (ngSubmit)="onSubmit()" method="post" action="" class="form">
+      <div class="form__div">
+        <input id="nome" name="nome" type="text" class="form__input" placeholder=" " [(ngModel)]="cliente.nome">
+        <label for="" class="form__label">Nome</label>
+    </div>
+    <div class="form__div">
+      <input id="fone" name="fone" type="text" class="form__input" placeholder=" " [(ngModel)]="cliente.telefone">
+      <label for="" class="form__label">telefone</label>
+  </div>
+      <div  class="form__div">
+          <input id="email" name="email" type="text" class="form__input" placeholder=" " [(ngModel)]="cliente.email">
+          <label for="" class="form__label">Email</label>
+      </div>
+
+      <input type="submit" class="form__button" value="Salvar">
+    </form>
+  </main>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="full-screen-container">
+  <div class="container">
+    <h1 class="titulo">Atualizar Cadastro</h1>
+    <form (ngSubmit)= "onSubmit()" #clienteForm = "ngForm" class="form">
+      <div class="input-group">
+        <label for="nome">nome</label>
+        <input
+        [(ngModel)] = "cliente.nome" #nome = "ngModel" type="nome" name="nome" id="nome">
+      </div>
+      <div class="input-group">
+        <label for="telefone">Telefone</label>
+        <input [(ngModel)] = "cliente.telefone" #telefone = "ngModel" type="telefone" name="telefone" id="telefone">
+      </div>
+      <div class="input-group">
+        <label for="email">E-mail</label>
+        <input [(ngModel)] = "cliente.email" #email = "ngModel" type="email" name="email" id="email">
+      </div>
+
+      <button type="submit" class="btn">Salvar</button>
+    </form>
+  </div>
+</div>-->

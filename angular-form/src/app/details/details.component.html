@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">Clientes</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contact" routerLink="/clientes"
+            >Lista de Cliente</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container">
+  <header>
+    <img src="../../assets/imagem/logo.png" alt="" />
+    <h1>Editar de Cliente</h1>
+  </header>
+  <main>
+    <form action="" class="form">
+        <div CLASS="form__div">
+          <label class="form__label"><b>Codigo : </b> {{ cliente.id }}</label>
+        </div >
+        <div CLASS="form__div">
+          <label class="form__label"><b>Nome : </b> {{ cliente.nome }}</label>
+        </div>
+        <div CLASS="form__div">
+          <label class="form__label"><b>Telefone : </b> {{ cliente.telefone }}</label>
+        </div>
+        <div CLASS="form__div">
+          <label class="form__label"><b>E-mail : </b> {{ cliente.email }}</label>
+        </div>
+
+    </form>
+  </main>
+</div>
+
+<!--<h1>Informações do Cliente</h1>
+<div class="container">
+  <div class="row">
+  <div>
+    <label><b>Codigo: </b> {{ cliente.id }}</label>
+  </div>
+  <div>
+    <label><b>Nome: </b> {{ cliente.nome }}</label>
+  </div>
+  <div>
+    <label><b>Telefone: </b> {{ cliente.telefone }}</label>
+  </div>
+  <div>
+    <label><b>E-mail: </b> {{ cliente.email }}</label>
+  </div>
+  </div>
+</div>-->
